@@ -5,18 +5,10 @@ public class Candidato {
     private boolean ensinoSuperiorcompleto;
     private int anosEmEntidadeDeClasse;
     private int anosDeExperiencia;
-    private int totalPontos;
+    private int totalPontos = 0;
 
-    public boolean isEnsinoMedioCompleto() {
+    public boolean temEnsinoMedioCompleto() {
         return ensinoMedioCompleto;
-    }
-
-    public void setEnsinoMedioCompleto(boolean ensinoMedioCompleto) {
-        this.ensinoMedioCompleto = ensinoMedioCompleto;
-    }
-
-    public boolean isEnsinoSuperiorcompleto() {
-        return ensinoSuperiorcompleto;
     }
 
     public void setEnsinoSuperiorcompleto(boolean ensinoSuperiorcompleto) {
