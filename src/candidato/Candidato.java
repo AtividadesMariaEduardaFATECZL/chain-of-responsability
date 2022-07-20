@@ -1,4 +1,4 @@
-package model;
+package candidato;
 
 public class Candidato {
     private boolean ensinoMedioCompleto;
@@ -7,20 +7,20 @@ public class Candidato {
     private int anosDeExperiencia;
     private int totalPontos = 0;
 
+    public Candidato(boolean ensinoMedioCompleto, boolean ensinoSuperiorcompleto, int anosEmEntidadeDeClasse,
+                     int anosDeExperiencia) {
+        this.ensinoMedioCompleto = ensinoMedioCompleto;
+        this.ensinoSuperiorcompleto = ensinoSuperiorcompleto;
+        this.anosEmEntidadeDeClasse = anosEmEntidadeDeClasse;
+        this.anosDeExperiencia = anosDeExperiencia;
+    }
+
     public boolean temEnsinoMedioCompleto() {
         return ensinoMedioCompleto;
     }
 
-    public void setEnsinoSuperiorcompleto(boolean ensinoSuperiorcompleto) {
-        this.ensinoSuperiorcompleto = ensinoSuperiorcompleto;
-    }
-
     public int getAnosEmEntidadeDeClasse() {
         return anosEmEntidadeDeClasse;
-    }
-
-    public void setAnosEmEntidadeDeClasse(int anosEmEntidadeDeClasse) {
-        this.anosEmEntidadeDeClasse = anosEmEntidadeDeClasse;
     }
 
     public int getAnosDeExperiencia() {
