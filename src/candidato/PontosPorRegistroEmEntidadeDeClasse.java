@@ -1,6 +1,10 @@
 package candidato;
 
-public class RegistroEmEntidadeDeClasse implements CaculaPontosCandidato {
+public class PontosPorRegistroEmEntidadeDeClasse extends PontosCandidato {
+
+    public PontosPorRegistroEmEntidadeDeClasse() {
+        super(null);
+    }
 
     @Override
     public int acrescentaPonto(Candidato candidato) {
