@@ -7,10 +7,10 @@ public class PontosPorEnsinoSuperiorCompleto extends PontosCandidato {
     }
 
     @Override
-    public int acrescentaPonto(Candidato candidato) {
-        if (candidato.temEnsinoMedioCompleto()) {
-            return candidato.getTotalPontos() + 10;
+    public void acrescentaPonto(Candidato candidato) {
+        if (candidato.isEnsinoSuperiorcompleto()) {
+            candidato.setTotalPontos(candidato.getTotalPontos() + 10);
         }
-        return proximo.acrescentaPonto(candidato);
+        proximo.acrescentaPonto(candidato);
     }
 }

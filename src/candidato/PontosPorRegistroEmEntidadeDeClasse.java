@@ -7,7 +7,7 @@ public class PontosPorRegistroEmEntidadeDeClasse extends PontosCandidato {
     }
 
     @Override
-    public int acrescentaPonto(Candidato candidato) {
-        return candidato.getTotalPontos() + candidato.getAnosEmEntidadeDeClasse();
+    public void acrescentaPonto(Candidato candidato) {
+        candidato.setTotalPontos(candidato.getTotalPontos() + candidato.getAnosEmEntidadeDeClasse());
     }
 }

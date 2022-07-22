@@ -7,5 +7,5 @@ public abstract class PontosCandidato {
         this.proximo = proximo;
     }
 
-    public abstract int acrescentaPonto(Candidato candidato);
+    public abstract void acrescentaPonto(Candidato candidato);
 }

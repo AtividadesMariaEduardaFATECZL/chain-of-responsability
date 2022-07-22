@@ -15,8 +15,13 @@ public class Candidato {
         this.anosDeExperiencia = anosDeExperiencia;
     }
 
-    public boolean temEnsinoMedioCompleto() {
+
+    public boolean isEnsinoMedioCompleto() {
         return ensinoMedioCompleto;
+    }
+
+    public boolean isEnsinoSuperiorcompleto() {
+        return ensinoSuperiorcompleto;
     }
 
     public int getAnosEmEntidadeDeClasse() {
@@ -25,10 +30,6 @@ public class Candidato {
 
     public int getAnosDeExperiencia() {
         return anosDeExperiencia;
-    }
-
-    public void setAnosDeExperiencia(int anosDeExperiencia) {
-        this.anosDeExperiencia = anosDeExperiencia;
     }
 
     public int getTotalPontos() {
