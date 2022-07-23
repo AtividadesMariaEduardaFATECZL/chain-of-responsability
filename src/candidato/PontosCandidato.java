@@ -11,9 +11,13 @@ public abstract class PontosCandidato {
         if (deveAplicarPara(candidato)) {
             acrescentaPonto(candidato);
         }
-        if (proximo != null) {
+        if (naoEOFinalDaCadeiaDeExecucao()) {
             proximo.calcularPontos(candidato);
         }
+    }
+
+    private boolean naoEOFinalDaCadeiaDeExecucao() {
+        return proximo != null;
     }
 
     public abstract void acrescentaPonto(Candidato candidato);
