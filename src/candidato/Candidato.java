@@ -15,6 +15,9 @@ public class Candidato {
         this.anosDeExperiencia = anosDeExperiencia;
     }
 
+    public void setTotalPontos(int totalPontos) {
+        this.totalPontos = totalPontos;
+    }
 
     public boolean isEnsinoMedioCompleto() {
         return ensinoMedioCompleto;
@@ -34,10 +37,6 @@ public class Candidato {
 
     public int getTotalPontos() {
         return totalPontos;
-    }
-
-    public void setTotalPontos(int totalPontos) {
-        this.totalPontos = totalPontos;
     }
 
     @Override

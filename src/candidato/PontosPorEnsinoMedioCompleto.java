@@ -8,9 +8,11 @@ public class PontosPorEnsinoMedioCompleto extends PontosCandidato {
 
     @Override
     public void acrescentaPonto(Candidato candidato) {
-        if (candidato.isEnsinoMedioCompleto()) {
-            candidato.setTotalPontos(candidato.getTotalPontos() + 5);
-        }
-        proximo.acrescentaPonto(candidato);
+        candidato.setTotalPontos(candidato.getTotalPontos() + 5);
+    }
+
+    @Override
+    public boolean deveAplicarPara(Candidato candidato) {
+        return candidato.isEnsinoMedioCompleto();
     }
 }

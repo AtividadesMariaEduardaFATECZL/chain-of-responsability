@@ -8,9 +8,11 @@ public class PontosPorEnsinoSuperiorCompleto extends PontosCandidato {
 
     @Override
     public void acrescentaPonto(Candidato candidato) {
-        if (candidato.isEnsinoSuperiorcompleto()) {
-            candidato.setTotalPontos(candidato.getTotalPontos() + 10);
-        }
-        proximo.acrescentaPonto(candidato);
+        candidato.setTotalPontos(candidato.getTotalPontos() + 10);
+    }
+
+    @Override
+    public boolean deveAplicarPara(Candidato candidato) {
+        return candidato.isEnsinoSuperiorcompleto();
     }
 }

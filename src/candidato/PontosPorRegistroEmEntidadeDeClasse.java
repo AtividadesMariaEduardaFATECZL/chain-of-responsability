@@ -10,4 +10,9 @@ public class PontosPorRegistroEmEntidadeDeClasse extends PontosCandidato {
     public void acrescentaPonto(Candidato candidato) {
         candidato.setTotalPontos(candidato.getTotalPontos() + candidato.getAnosEmEntidadeDeClasse());
     }
+
+    @Override
+    public boolean deveAplicarPara(Candidato candidato) {
+        return true;
+    }
 }

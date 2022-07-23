@@ -8,9 +8,11 @@ public class PontosPorExperienciaNaArea extends PontosCandidato {
 
     @Override
     public void acrescentaPonto(Candidato candidato) {
-        if (candidato.getAnosDeExperiencia() > 0) {
-            candidato.setTotalPontos(candidato.getTotalPontos() + candidato.getAnosDeExperiencia() * 2);
-        }
-        proximo.acrescentaPonto(candidato);
+        candidato.setTotalPontos(candidato.getTotalPontos() + candidato.getAnosDeExperiencia() * 2);
+    }
+
+    @Override
+    public boolean deveAplicarPara(Candidato candidato) {
+        return candidato.getAnosDeExperiencia() > 0;
     }
 }

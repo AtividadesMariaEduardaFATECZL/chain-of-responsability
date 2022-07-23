@@ -6,6 +6,6 @@ public class CalculadoraDePontosDoCandidato {
                 new PontosPorEnsinoSuperiorCompleto(
                         new PontosPorExperienciaNaArea(
                                 new PontosPorRegistroEmEntidadeDeClasse())));
-        pontosCandidato.acrescentaPonto(candidato);
+        pontosCandidato.calcularPontos(candidato);
     }
 }
